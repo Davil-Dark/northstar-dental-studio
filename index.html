@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Northstar Dental Studio — a premium dental experience concept by Virexa & Hartwell.">
+<title>Northstar Dental Studio — Austin, TX</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#162521; --muted:#6d7773; --paper:#f5f2ea; --soft:#e7ece5;
+  --sage:#b9c9bd; --sage2:#dce5dd; --line:rgba(22,37,33,.14);
+  --white:#fffdf8; --gold:#b49a69;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.55}
+a{text-decoration:none;color:inherit}.container{width:min(1240px,calc(100% - 48px));margin:auto}
+.nav{position:fixed;top:16px;left:50%;transform:translateX(-50%);width:min(1240px,calc(100% - 32px));z-index:20;display:flex;align-items:center;justify-content:space-between;padding:14px 18px 14px 20px;background:rgba(245,242,234,.82);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.65);border-radius:999px;box-shadow:0 12px 40px rgba(22,37,33,.07)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;letter-spacing:-.03em}.mark{width:28px;height:28px;border:1.5px solid var(--ink);border-radius:50%;display:grid;place-items:center;font-family:"Instrument Serif";font-size:18px}
+.navlinks{display:flex;gap:28px;font-size:13px;color:#56615d}.navlinks a:hover{color:var(--ink)}
+.navcta{background:var(--ink);color:white;padding:11px 17px;border-radius:999px;font-size:13px;font-weight:600}
+.hero{min-height:100svh;padding:150px 0 70px;display:grid;grid-template-columns:1.03fr .97fr;gap:70px;align-items:center}
+.eyebrow{display:flex;align-items:center;gap:12px;text-transform:uppercase;letter-spacing:.19em;font-size:11px;color:#7b817c;font-weight:600}.eyebrow:before{content:"";width:34px;height:1px;background:var(--gold)}
+h1,h2,h3{margin:0;font-weight:400;letter-spacing:-.045em}h1{font-family:"Instrument Serif",serif;font-size:clamp(64px,7.5vw,112px);line-height:.88;max-width:680px;margin:24px 0 28px}
+h1 em,h2 em{font-style:italic;color:#71847b}
+.hero p{max-width:510px;font-size:18px;color:var(--muted);line-height:1.7;margin:0 0 34px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;padding:15px 21px;font-size:13px;font-weight:600;border:1px solid var(--ink);transition:.25s}.btn.primary{background:var(--ink);color:white}.btn.secondary{border-color:var(--line)}.btn:hover{transform:translateY(-2px)}
+.hero-meta{display:flex;gap:30px;margin-top:55px;padding-top:24px;border-top:1px solid var(--line);max-width:600px}.meta strong{display:block;font-size:15px}.meta span{font-size:12px;color:var(--muted)}
+.hero-art{position:relative;min-height:680px;border-radius:42% 42% 24px 24px;overflow:hidden;background:#d7e0d9;box-shadow:0 30px 90px rgba(22,37,33,.12)}
+.hero-art img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.75)}
+.hero-art:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(17,31,27,.38))}
+.float-card{position:absolute;z-index:2;left:26px;bottom:26px;width:min(310px,calc(100% - 52px));padding:22px;background:rgba(255,253,248,.93);backdrop-filter:blur(15px);border-radius:20px}.float-card small{display:block;color:#7d857f;text-transform:uppercase;letter-spacing:.14em;font-size:9px;margin-bottom:9px}.float-card b{font-family:"Instrument Serif";font-size:29px;font-weight:400}
+.section{padding:125px 0}.section.dark{background:var(--ink);color:#f5f2ea}.split{display:grid;grid-template-columns:.8fr 1.2fr;gap:100px}.section h2{font-family:"Instrument Serif";font-size:clamp(54px,6vw,86px);line-height:.95;max-width:700px}.lead{color:var(--muted);font-size:18px;line-height:1.75;max-width:570px}.dark .lead{color:#b6c0ba}
+.service-grid{margin-top:70px;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}.dark .service-grid{border-color:rgba(245,242,234,.17)}
+.service{padding:28px 18px 38px 0;border-bottom:1px solid var(--line);min-height:220px}.service:nth-child(n){border-right:1px solid var(--line);padding-left:18px}.service:nth-child(3n+1){padding-left:0}.service:nth-child(3n){border-right:0}.num{font-size:11px;color:var(--gold);letter-spacing:.16em}.service h3{font-family:"Instrument Serif";font-size:35px;margin:34px 0 10px}.service p{color:var(--muted);font-size:14px;max-width:290px}.dark .service p{color:#aab6af}
+.experience{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:70px}.photo{border-radius:28px;overflow:hidden;min-height:520px;position:relative;background:#d9e0d8}.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s}.photo:hover img{transform:scale(1.035)}.photo.tall{min-height:650px}.photo-label{position:absolute;left:20px;bottom:20px;background:rgba(255,253,248,.9);padding:15px 18px;border-radius:16px;font-size:13px;backdrop-filter:blur(12px)}
+.doctor{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:center}.doctor-img{height:690px;border-radius:28px;overflow:hidden}.doctor-img img{width:100%;height:100%;object-fit:cover}.quote{font-family:"Instrument Serif";font-size:clamp(38px,4.5vw,66px);line-height:1.02;margin:28px 0}.signature{color:var(--muted);font-size:13px}
+.book{background:#dbe5dd;border-radius:34px;padding:70px;display:grid;grid-template-columns:1fr .9fr;gap:70px;align-items:start}.book h2{font-size:clamp(52px,5vw,78px)}.form{background:var(--white);padding:30px;border-radius:25px;box-shadow:0 20px 60px rgba(22,37,33,.08)}
+.field{margin-bottom:14px}.field label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:#737d78;margin-bottom:7px}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);background:#faf9f4;border-radius:12px;padding:13px 14px;font:inherit;font-size:14px;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:#778d82}.field textarea{min-height:90px;resize:vertical}.form button{width:100%;cursor:pointer}.fine{font-size:11px;color:#858d88;margin-top:12px;line-height:1.5}
+.footer{padding:60px 0 30px;border-top:1px solid var(--line)}.footer-top{display:flex;justify-content:space-between;gap:40px}.footer p{color:var(--muted);max-width:340px;font-size:13px}.footer-bottom{margin-top:55px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:#8a928e;font-size:11px}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:900px){.navlinks{display:none}.hero,.split,.doctor,.book{grid-template-columns:1fr;gap:45px}.hero{padding-top:125px}.hero-art{min-height:600px}.service-grid{grid-template-columns:1fr 1fr}.service:nth-child(n){border-right:0;padding-left:0}.experience{grid-template-columns:1fr}.photo,.photo.tall{min-height:500px}.book{padding:35px}.doctor-img{height:580px}}
+@media(max-width:560px){.container{width:min(100% - 28px,1240px)}.nav{width:calc(100% - 18px);top:9px}.navcta{padding:10px 13px}.hero{padding-top:110px}.hero h1{font-size:68px}.hero p{font-size:16px}.hero-art{min-height:520px;border-radius:38% 38% 22px 22px}.section{padding:90px 0}.service-grid{grid-template-columns:1fr}.service{min-height:auto;padding:28px 0}.service:nth-child(n){border-right:0;padding-left:0}.book{border-radius:24px;padding:26px}.footer-top,.footer-bottom{flex-direction:column}.doctor-img{height:480px}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a class="brand" href="#"><span class="mark">N</span> NORTHSTAR</a>
+  <div class="navlinks">
+    <a href="#care">Care</a><a href="#experience">Experience</a><a href="#doctor">Our Dentist</a><a href="#visit">Visit</a>
+  </div>
+  <a class="navcta" href="#visit">Book a visit</a>
+</nav>
+
+<main>
+<section class="container hero">
+  <div class="reveal">
+    <div class="eyebrow">Austin · Texas · Dentistry</div>
+    <h1>A better kind of <em>dental</em> care.</h1>
+    <p>Thoughtful dentistry for healthy, confident smiles — delivered in a modern space designed around you.</p>
+    <div class="actions">
+      <a class="btn primary" href="#visit">Request an appointment ↗</a>
+      <a class="btn secondary" href="#care">Explore care</a>
+    </div>
+    <div class="hero-meta">
+      <div class="meta"><strong>01</strong><span>Personalized care</span></div>
+      <div class="meta"><strong>02</strong><span>Modern technology</span></div>
+      <div class="meta"><strong>03</strong><span>Human experience</span></div>
+    </div>
+  </div>
+  <div class="hero-art reveal">
+    <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1400&q=85" alt="Modern dental clinic interior">
+    <div class="float-card"><small>Northstar standard</small><b>Care, with intention.</b><div style="font-size:12px;color:#6d7773;margin-top:5px">Comfortable visits. Clear treatment plans. No rushed conversations.</div></div>
+  </div>
+</section>
+
+<section class="section dark" id="care">
+<div class="container">
+  <div class="split reveal">
+    <div><div class="eyebrow">01 · Our approach</div></div>
+    <div><h2>Clinical precision.<br><em>Human</em> attention.</h2><p class="lead" style="margin-top:25px">From preventive care to complete smile transformations, every treatment starts with listening. We combine modern dentistry with a calmer, more considered patient experience.</p></div>
+  </div>
+  <div class="service-grid reveal">
+    <article class="service"><span class="num">01 / GENERAL</span><h3>Preventive care</h3><p>Cleanings, exams and personalized guidance to protect your smile for the long term.</p></article>
+    <article class="service"><span class="num">02 / COSMETIC</span><h3>Smile design</h3><p>Thoughtful cosmetic treatments designed around your features, goals and confidence.</p></article>
+    <article class="service"><span class="num">03 / RESTORATIVE</span><h3>Dental implants</h3><p>Modern restorative solutions that bring back function, comfort and a natural-looking smile.</p></article>
+    <article class="service"><span class="num">04 / ORTHODONTIC</span><h3>Clear aligners</h3><p>A discreet approach to creating a straighter, healthier smile with a plan built for you.</p></article>
+    <article class="service"><span class="num">05 / EMERGENCY</span><h3>Urgent care</h3><p>Prompt attention for unexpected dental pain, damage or problems that cannot wait.</p></article>
+    <article class="service"><span class="num">06 / FAMILY</span><h3>Family dentistry</h3><p>Comfortable, consistent care for patients at every stage of life.</p></article>
+  </div>
+</div>
+</section>
+
+<section class="section" id="experience">
+<div class="container reveal">
+  <div class="eyebrow">02 · The experience</div>
+  <h2 style="margin-top:20px">A dental visit that feels<br><em>considered.</em></h2>
+  <div class="experience">
+    <div class="photo tall"><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=85" alt="Modern dental office"><div class="photo-label">A calm, contemporary environment</div></div>
+    <div style="display:grid;gap:18px">
+      <div class="photo"><img src="https://images.unsplash.com/photo-1588776814546-daab30f310ce?auto=format&fit=crop&w=1200&q=85" alt="Dental professional at work"><div class="photo-label">Modern clinical technology</div></div>
+      <div class="photo"><img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1200&q=85" alt="Dental care detail"><div class="photo-label">Clear, personalized treatment</div></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="section" id="doctor">
+<div class="container doctor reveal">
+  <div class="doctor-img"><img src="https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=1000&q=85" alt="Dental professional portrait"></div>
+  <div>
+    <div class="eyebrow">03 · Meet your dentist</div>
+    <div class="quote">“Thoughtful care should feel beautiful — and personal.”</div>
+    <p class="lead">Northstar is a concept for a modern Austin dental practice where clinical expertise meets a more human patient experience. Every touchpoint — from the first visit to long-term care — is designed to feel considered.</p>
+    <p class="signature">Dr. Olivia Carter, DDS · Cosmetic & General Dentistry</p>
+  </div>
+</div>
+</section>
+
+<section class="section" id="visit">
+<div class="container">
+  <div class="book reveal">
+    <div>
+      <div class="eyebrow">04 · Your next visit</div>
+      <h2 style="margin-top:20px">Let's make your next appointment <em>easy.</em></h2>
+      <p class="lead" style="margin-top:25px">Tell us what you need and our team will follow up with available appointment options.</p>
+      <div style="margin-top:30px;font-size:13px;color:#66736d;line-height:1.9">
+        <strong>Northstar Dental Studio</strong><br>
+        Austin, Texas<br>
+        Mon–Fri · 8:00 AM–5:00 PM
+      </div>
+    </div>
+    <form class="form" id="appointmentForm" action="/api/appointment" method="POST">
+      <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+      <input type="hidden" name="source" value="Northstar Dental Studio">
+      <div class="field"><label>Full name</label><input required name="name" placeholder="Your name"></div>
+      <div class="field"><label>Email</label><input required type="email" name="email" placeholder="you@example.com"></div>
+      <div class="field"><label>Phone</label><input required type="tel" name="phone" placeholder="(512) 000-0000"></div>
+      <div class="field"><label>What can we help with?</label><select name="service"><option>General dentistry</option><option>Cosmetic dentistry</option><option>Dental implants</option><option>Clear aligners</option><option>Emergency visit</option><option>Other</option></select></div>
+      <div class="field"><label>Message</label><textarea name="message" placeholder="Tell us a little about what you need…"></textarea></div>
+      <button class="btn primary" type="submit">Request appointment ↗</button>
+      <div class="fine">Demo concept by Virexa & Hartwell. Appointment requests from this prototype are routed to <strong>virexahartwell@gmail.com</strong>.</div>
+    </form>
+  </div>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+<div class="container">
+  <div class="footer-top">
+    <div><a class="brand" href="#"><span class="mark">N</span> NORTHSTAR</a><p>A modern dental experience concept for Austin, Texas.</p></div>
+    <div style="text-align:right;font-size:13px;color:#68736e"><div>General · Cosmetic · Restorative</div><div style="margin-top:7px">Austin, TX</div></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Northstar Dental Studio · Concept project</span><span>Designed & developed by Virexa & Hartwell</span></div>
+</div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries)=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+const form = document.getElementById('appointmentForm');
+if (form) {
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const button = form.querySelector('button[type="submit"]');
+    const original = button.textContent;
+    button.disabled = true;
+    button.textContent = 'Sending…';
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+        body: JSON.stringify(Object.fromEntries(new FormData(form)))
+      });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(result.error || 'Unable to send request.');
+      form.reset();
+      button.textContent = 'Request received ✓';
+      setTimeout(() => { button.disabled = false; button.textContent = original; }, 3500);
+    } catch (error) {
+      button.disabled = false;
+      button.textContent = original;
+      alert(error.message || 'Something went wrong. Please try again.');
+    }
+  });
+}
+</script>
+</body>
+</html>

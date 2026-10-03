@@ -1,4 +1,4 @@
-const TO_EMAIL = "virexahartwell@gmail.com";
+const TO_EMAIL = "delivered@resend.dev";
 
 export async function onRequestPost(context) {
   const request = context.request;
